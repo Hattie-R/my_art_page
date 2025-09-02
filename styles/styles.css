@@ -1,21 +1,20 @@
 body{
-    background-color: #181a1b;
-    margin-top: 2%;
+    background-image: linear-gradient(to bottom right, #93b5af, #7a565b, #e54348);
+    margin-top: 30px;
 }
 
 .main_container {
     display: grid;
     width: 600px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;      
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 30% auto;
-    background-color: rgb(46, 28, 7);
-    border-radius: 2%;
+    background-image: linear-gradient(to bottom right, #544154, #332832);
+    border-radius: 20px;
     grid-gap: 2%;
 }
 .main_container > div {
-    background-color: #2b0c0c;
     text-align: left;
 }
 .logo {
@@ -33,13 +32,15 @@ body{
 .title {
     grid-area: 1 / 2 / 1 / 2;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
+    color: #bbb6df;
     place-items: left;
 }
 .intro {
     grid-area: 2 / 2 / 2 / 2;
+    margin-right: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 10;
+    color: #bbb6df;
 }
 
 .the_rest {
@@ -50,7 +51,8 @@ body{
 .buttons{
     grid-area: 4 / 2 / 4 /2;
     display: flex;
-    height: 100px;
+    height: 150px;
+    margin-right: 40px;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -64,22 +66,41 @@ body{
     margin: 0 auto;      
     grid-template-rows: auto auto ;
     grid-template-columns: auto auto;
-    background-color: rgb(46, 28, 7);
-    border-radius: 2%;
+    background-image: linear-gradient(to bottom right, #544154, #332832);
+    border-radius: 20px;
     grid-gap: 2%;
 }
 .socials_container > div {
-    background-color: #2b0c0c;
     text-align: center;
-    border:#518aa7
 }
+
+.socials_title{
+    margin-top: 30px;
+    color: #bbb6df;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .socials_icons{
     display: flex;
     flex-direction: row;
     justify-content: center;
-     justify-content: space-evenly;
+    justify-content: space-evenly;
 }
+
 .socials_ico{
     width: 40px;
     height: 40px;
+}
+
+button{
+    height: 50px;
+    border-radius: 30px;
+    background-color: #d46f57;
+    color: #ffffff;
+    text-align: left;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #e7a290;
 }
