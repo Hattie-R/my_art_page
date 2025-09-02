@@ -4,7 +4,7 @@ body{
     margin-top: 2%;
 }
 
-.container {
+.main_container {
     display: grid;
     width: 600px;
     margin: 0 auto;      
@@ -14,7 +14,7 @@ body{
     border-radius: 2%;
     grid-gap: 2%;
 }
-.container > div {
+.main_container > div {
     background-color: #2b0c0c;
     text-align: left;
 }
@@ -55,8 +55,44 @@ body{
 }
 
 
-.socials {
+.socials_container {
+    display: grid;
+    width: 600px;
+    margin: 0 auto;      
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    background-color: rgb(46, 28, 7);
+    border-radius: 2%;
+    grid-gap: 2%;
+}
+
+.socials_container > div {
+    background-color: #2b0c0c;
+    text-align: left;
+}
+
+.socials_text1{
+    grid-area: 1 / 1 / 1 / 1;
+    text-align: center;
+}
+.social1{
+    grid-area: 2 / 1 / 2 / 1;
     display: flex;
-    width: 40px;
+    flex-direction: row;
+    justify-content: space-between;
     height: 40px;
+    width: 40px;
+}
+
+.socials_text2{
+    grid-area: 1 / 2 / 1 / 2;
+    text-align: center;
+}
+.social2{
+    grid-area: 2 / 2 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    width: 40px;
 }
