@@ -1,5 +1,9 @@
 body{
     background-image: linear-gradient(to bottom right, #93b5af, #7a565b, #e54348);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    min-height: 100vh;
     margin-top: 30px;
 }
 
